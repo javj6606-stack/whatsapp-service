@@ -1,9 +1,10 @@
 {
   "name": "whatsapp-service",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.0.0",
+  "description": "Glowly WhatsApp AI receptionist backend — Meta Cloud API, third-party provider, ya custom API se connect hota hai.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,11 +13,10 @@
   "type": "commonjs",
   "dependencies": {
     "@supabase/supabase-js": "^2.112.1",
-    "@whiskeysockets/baileys": "^7.0.0-rc14",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "pino": "^10.3.1",
-    "qrcode": "^1.5.4"
+    "express-rate-limit": "^7.4.0",
+    "pino": "^10.3.1"
   }
 }
