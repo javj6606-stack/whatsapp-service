@@ -5,7 +5,7 @@ const { createClient } = require("@supabase/supabase-js");
 require("dotenv").config();
 
 const app = express();
-
+ app.set('trust proxy', 1);
 // ============================================================
 // FIX 1: CORS ab sirf apni dashboard domain se allowed hai,
 // pehle bilkul open (`cors()`) tha jo kisi bhi website ko
